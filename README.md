@@ -1,11 +1,11 @@
 # webMethods Integration Server package for PGP
-This project provides a sample Integration Server package for PGP encryption and decryption. It is using the Bouncy Castle library (https://www.bouncycastle.org/, version 145).
+This project provides a sample Integration Server package for PGP encryption and decryption. It is using the Bouncy Castle library (https://www.bouncycastle.org/, version 165 or + ).
 
 ## Requirements
 
 The project was developed and tested on the following installation:
-1. Integration Server 9.12
-2. Software AG Designer 9.12 with Service Development
+1. Integration Server 10.15
+2. Software AG Designer 10.15 with Service Development
 
 ## Quick start
 
@@ -13,8 +13,8 @@ To install the project on your local development environment follow these steps.
 1. Checkout the repository to your development environment
 2. Copy the ```PGP``` folder to ```<install_dir>/IntegrationServer/instances/<instance>/packages```.
 3. Download the following Bouncy Castle libraries and copy to ```<install_dir>/IntegrationServer/instances/<instance>/packages/PGP/code/jars/static```
-    1. http://www.bouncycastle.org/archive/145/bcprov-jdk15-145.jar
-    2. http://www.bouncycastle.org/archive/145/bcpg-jdk15-145.jar
+    1. https://repo1.maven.org/maven2/org/bouncycastle/bcprov***/bcprov-***.jar
+    2. https://repo1.maven.org/maven2/org/bouncycastle/bcpg***/bcpg-***.jar
 3. Restart Integration Server
 
 ## Run tests
